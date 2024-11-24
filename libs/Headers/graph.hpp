@@ -25,7 +25,8 @@ public:
     void displayGraph() const;
 
     // Method to save adjacency list to a JSON file
-    void saveAdjacencyListToFile(const std::string& filename);
+    void saveAdjacencyListToFile(const string& filename);
+
 };
 
-#endif // GRAPH_H
+#endif 

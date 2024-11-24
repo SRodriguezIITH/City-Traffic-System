@@ -1,4 +1,4 @@
-#include "../Headers/graph.h"
+#include "../Headers/graph.hpp"
 
 
 Graph::Graph(int vertices) : vertices(vertices), adjList(vertices) {
@@ -86,7 +86,7 @@ void Graph::displayGraph() const {
 
 using json = nlohmann::json;
 
-void Graph::saveAdjacencyListToFile(const std::string& filename) {
+void Graph::saveAdjacencyListToFile(const string& filename) {
     json adjListJson;
 
     for (int i = 0; i < adjList.size(); ++i) {
@@ -95,8 +95,7 @@ void Graph::saveAdjacencyListToFile(const std::string& filename) {
         }
     }
     
-    std::ofstream file(filename);
+    ofstream file(filename);
     file << adjListJson.dump(4); 
     file.close();
 }
-
