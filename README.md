@@ -16,7 +16,6 @@ root
 │   ├── city.json                # Adjacency list for city roads
 │   ├── cityscheme.png           # Visualization of the entire city
 │   ├── route.json               # Predefined route data
-│   ├── routeplan.html           # HTML version of route visualization
 │   └── routeplan.png            # Image of the selected route
 ├── libs/
 │   ├── Classes/
@@ -32,6 +31,9 @@ root
 │   └── util/
 │       ├── json                 # JSON datastructure for c++
 │       ├── python               # Python utilities for visualization
+|       |   |
+|       |   cityschema.py
+|       |   
 │       └── constants.cpp        # Constants used in the application
 ├── .vscode/
 ├── README.md                    # Project documentation
