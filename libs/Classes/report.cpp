@@ -1,7 +1,5 @@
 #include "../Headers/report.hpp"
-#include <fstream>
-#include <iomanip>
-#include <iostream>
+
 
 Report::Report(const Graph& graph, double distanceWeight, double timeWeight)
     : graph(graph), distanceWeight(distanceWeight), timeWeight(timeWeight) {}
