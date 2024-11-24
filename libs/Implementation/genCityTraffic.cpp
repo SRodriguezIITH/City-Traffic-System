@@ -1,6 +1,6 @@
 #include "../Classes/graph.cpp"
 
-Graph generateCityTraffic(int nodes, int maxDistance, int maxTime) {
+Graph generateCityTraffic() {
     Graph cityGraph(nodes);
 
     for (int i = 0; i < nodes; ++i) {
