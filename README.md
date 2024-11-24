@@ -14,9 +14,9 @@ bash
 root
 ├── dataset/
 │   ├── city.json                # Adjacency list for city roads
-│   ├── cityscheme.png           # Visualization of the entire city
-│   ├── route.json               # Predefined route data
-│   └── routeplan.png            # Image of the selected route
+│   ├── cityscheme.png           # Visualization of the entire city as a Graph
+│   ├── route.json               # Route Data Saved after Optimization 
+│   └── routeplan.png            # Image of the optimal route in city as a Graph
 ├── libs/
 │   ├── Classes/
 │   │   ├── graph.cpp            # Graph class implementation
@@ -25,14 +25,14 @@ root
 │   │   ├── graph.hpp            # Header for graph class
 │   │   └── report.hpp           # Header for report class
 │   ├── Implementation/
-│   │   ├── lib/
-│   │   │   └── genCityTraffic.cpp  # City traffic generation functions
+│   │   ├──
+│   │   └── genCityTraffic.cpp   # Generates City Nodes and Traffic
+│   │   └── main.cpp             # Main CPP file (Run Here)
 │   │   └── simulate.cpp         # Simulation logic
 │   └── util/
 │       ├── json                 # JSON datastructure for c++
 │       ├── python               # Python utilities for visualization
-|       |   |
-|       |   cityschema.py
+│       │   └── cityschema.py    # Visualize city and route (RUN this after main.cpp)
 |       |   
 │       └── constants.cpp        # Constants used in the application
 ├── .vscode/
