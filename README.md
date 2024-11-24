@@ -10,6 +10,7 @@ Visualization: The city’s road network is visualized with clear node labels, e
 File Structure
 bash
 
+```
 root
 ├── dataset/
 │   ├── city.json                # Adjacency list for city roads
@@ -35,7 +36,7 @@ root
 ├── .vscode/
 ├── README.md                    # Project documentation
 └── main.cpp                      # Entry point for traffic simulation
-Installation
+```
 
 ## Python Libraries Used:
 pip install matplotlib networkx
