@@ -1,626 +1,332 @@
 {
     "0": [
         {
-            "distance": 17,
-            "neighbor": 10,
-            "time": 35
+            "distance": 8,
+            "neighbor": 11,
+            "time": 56
         },
         {
-            "distance": 13,
-            "neighbor": 11,
-            "time": 41
+            "distance": 9,
+            "neighbor": 10,
+            "time": 64
+        },
+        {
+            "distance": 6,
+            "neighbor": 6,
+            "time": 69
         },
         {
             "distance": 14,
-            "neighbor": 28,
-            "time": 8
+            "neighbor": 11,
+            "time": 12
         }
     ],
     "1": [
         {
-            "distance": 11,
-            "neighbor": 27,
-            "time": 26
+            "distance": 4,
+            "neighbor": 7,
+            "time": 83
+        },
+        {
+            "distance": 19,
+            "neighbor": 14,
+            "time": 67
+        },
+        {
+            "distance": 18,
+            "neighbor": 14,
+            "time": 85
+        },
+        {
+            "distance": 4,
+            "neighbor": 12,
+            "time": 3
         }
     ],
     "10": [
         {
-            "distance": 17,
-            "neighbor": 0,
-            "time": 8
-        },
-        {
-            "distance": 3,
-            "neighbor": 4,
-            "time": 45
-        },
-        {
-            "distance": 5,
-            "neighbor": 21,
-            "time": 63
-        },
-        {
             "distance": 9,
+            "neighbor": 0,
+            "time": 41
+        },
+        {
+            "distance": 16,
             "neighbor": 3,
-            "time": 47
+            "time": 21
+        },
+        {
+            "distance": 18,
+            "neighbor": 4,
+            "time": 7
+        },
+        {
+            "distance": 16,
+            "neighbor": 7,
+            "time": 17
         },
         {
             "distance": 8,
-            "neighbor": 11,
-            "time": 67
+            "neighbor": 13,
+            "time": 15
         },
         {
-            "distance": 3,
-            "neighbor": 31,
-            "time": 5
+            "distance": 2,
+            "neighbor": 14,
+            "time": 7
         }
     ],
     "11": [
         {
-            "distance": 12,
-            "neighbor": 2,
-            "time": 36
-        },
-        {
-            "distance": 4,
-            "neighbor": 3,
-            "time": 10
-        },
-        {
             "distance": 8,
-            "neighbor": 10,
-            "time": 21
-        },
-        {
-            "distance": 13,
-            "neighbor": 20,
-            "time": 63
-        },
-        {
-            "distance": 13,
             "neighbor": 0,
-            "time": 58
+            "time": 43
+        },
+        {
+            "distance": 19,
+            "neighbor": 6,
+            "time": 47
         },
         {
             "distance": 14,
-            "neighbor": 23,
-            "time": 14
+            "neighbor": 0,
+            "time": 50
+        },
+        {
+            "distance": 1,
+            "neighbor": 5,
+            "time": 8
+        },
+        {
+            "distance": 9,
+            "neighbor": 14,
+            "time": 23
         }
     ],
     "12": [
         {
             "distance": 4,
-            "neighbor": 3,
-            "time": 50
+            "neighbor": 1,
+            "time": 69
         },
         {
-            "distance": 18,
-            "neighbor": 15,
-            "time": 61
+            "distance": 1,
+            "neighbor": 7,
+            "time": 18
         }
     ],
     "13": [
         {
-            "distance": 13,
-            "neighbor": 8,
-            "time": 17
-        },
-        {
-            "distance": 12,
-            "neighbor": 23,
-            "time": 67
-        },
-        {
-            "distance": 5,
-            "neighbor": 16,
-            "time": 9
-        }
-    ],
-    "14": [
-        {
-            "distance": 3,
-            "neighbor": 2,
-            "time": 82
-        },
-        {
-            "distance": 20,
-            "neighbor": 8,
-            "time": 74
-        },
-        {
-            "distance": 7,
-            "neighbor": 29,
-            "time": 39
-        }
-    ],
-    "15": [
-        {
-            "distance": 14,
-            "neighbor": 8,
-            "time": 30
-        },
-        {
-            "distance": 18,
-            "neighbor": 12,
-            "time": 20
-        },
-        {
-            "distance": 14,
-            "neighbor": 25,
-            "time": 69
-        }
-    ],
-    "16": [
-        {
-            "distance": 8,
+            "distance": 15,
             "neighbor": 6,
             "time": 43
         },
         {
-            "distance": 17,
-            "neighbor": 2,
-            "time": 57
-        },
-        {
-            "distance": 5,
-            "neighbor": 13,
-            "time": 47
-        },
-        {
-            "distance": 13,
-            "neighbor": 29,
-            "time": 24
-        }
-    ],
-    "17": [
-        {
-            "distance": 10,
-            "neighbor": 20,
-            "time": 14
-        },
-        {
-            "distance": 14,
-            "neighbor": 25,
-            "time": 4
-        },
-        {
             "distance": 18,
-            "neighbor": 26,
-            "time": 17
-        }
-    ],
-    "18": [
-        {
-            "distance": 13,
-            "neighbor": 28,
-            "time": 2
+            "neighbor": 7,
+            "time": 27
         },
         {
-            "distance": 16,
-            "neighbor": 21,
-            "time": 19
-        },
-        {
-            "distance": 16,
-            "neighbor": 5,
-            "time": 73
+            "distance": 8,
+            "neighbor": 10,
+            "time": 45
         },
         {
             "distance": 7,
-            "neighbor": 30,
-            "time": 21
+            "neighbor": 8,
+            "time": 82
         }
     ],
-    "19": [
+    "14": [
         {
             "distance": 19,
-            "neighbor": 31,
-            "time": 62
+            "neighbor": 1,
+            "time": 31
+        },
+        {
+            "distance": 18,
+            "neighbor": 1,
+            "time": 9
+        },
+        {
+            "distance": 11,
+            "neighbor": 6,
+            "time": 49
+        },
+        {
+            "distance": 9,
+            "neighbor": 11,
+            "time": 32
+        },
+        {
+            "distance": 2,
+            "neighbor": 10,
+            "time": 9
         }
     ],
     "2": [
         {
-            "distance": 12,
-            "neighbor": 11,
-            "time": 37
-        },
-        {
-            "distance": 12,
-            "neighbor": 7,
-            "time": 35
-        },
-        {
-            "distance": 3,
-            "neighbor": 14,
-            "time": 24
-        },
-        {
-            "distance": 17,
-            "neighbor": 16,
-            "time": 48
-        },
-        {
             "distance": 9,
-            "neighbor": 30,
-            "time": 21
-        }
-    ],
-    "20": [
-        {
-            "distance": 13,
-            "neighbor": 11,
-            "time": 49
-        },
-        {
-            "distance": 10,
-            "neighbor": 17,
-            "time": 50
-        },
-        {
-            "distance": 6,
-            "neighbor": 21,
-            "time": 5
-        }
-    ],
-    "21": [
-        {
-            "distance": 5,
-            "neighbor": 10,
-            "time": 3
-        },
-        {
-            "distance": 16,
-            "neighbor": 18,
-            "time": 24
-        },
-        {
-            "distance": 6,
-            "neighbor": 20,
-            "time": 14
-        },
-        {
-            "distance": 6,
-            "neighbor": 31,
-            "time": 23
-        },
-        {
-            "distance": 10,
-            "neighbor": 28,
-            "time": 31
-        }
-    ],
-    "22": [
-        {
-            "distance": 17,
-            "neighbor": 8,
-            "time": 14
-        },
-        {
-            "distance": 6,
-            "neighbor": 5,
-            "time": 82
-        }
-    ],
-    "23": [
-        {
-            "distance": 14,
-            "neighbor": 11,
-            "time": 36
-        },
-        {
-            "distance": 12,
-            "neighbor": 13,
-            "time": 32
-        },
-        {
-            "distance": 15,
-            "neighbor": 6,
-            "time": 40
-        },
-        {
-            "distance": 14,
-            "neighbor": 28,
-            "time": 70
-        }
-    ],
-    "24": [
-        {
-            "distance": 2,
-            "neighbor": 5,
-            "time": 28
-        },
-        {
-            "distance": 9,
-            "neighbor": 7,
-            "time": 80
-        },
-        {
-            "distance": 6,
-            "neighbor": 7,
-            "time": 71
-        }
-    ],
-    "25": [
-        {
-            "distance": 17,
             "neighbor": 3,
-            "time": 11
-        },
-        {
-            "distance": 14,
-            "neighbor": 15,
-            "time": 13
-        },
-        {
-            "distance": 14,
-            "neighbor": 17,
-            "time": 10
-        },
-        {
-            "distance": 3,
-            "neighbor": 27,
-            "time": 80
-        }
-    ],
-    "26": [
-        {
-            "distance": 18,
-            "neighbor": 17,
-            "time": 23
-        },
-        {
-            "distance": 14,
-            "neighbor": 30,
-            "time": 82
-        }
-    ],
-    "27": [
-        {
-            "distance": 11,
-            "neighbor": 1,
-            "time": 2
-        },
-        {
-            "distance": 3,
-            "neighbor": 25,
-            "time": 3
-        },
-        {
-            "distance": 6,
-            "neighbor": 31,
-            "time": 67
-        }
-    ],
-    "28": [
-        {
-            "distance": 10,
-            "neighbor": 7,
-            "time": 23
-        },
-        {
-            "distance": 13,
-            "neighbor": 18,
-            "time": 40
-        },
-        {
-            "distance": 14,
-            "neighbor": 23,
-            "time": 31
-        },
-        {
-            "distance": 14,
-            "neighbor": 0,
-            "time": 35
-        },
-        {
-            "distance": 10,
-            "neighbor": 21,
-            "time": 71
-        },
-        {
-            "distance": 20,
-            "neighbor": 31,
-            "time": 42
-        }
-    ],
-    "29": [
-        {
-            "distance": 7,
-            "neighbor": 14,
-            "time": 80
-        },
-        {
-            "distance": 13,
-            "neighbor": 16,
-            "time": 4
+            "time": 28
         }
     ],
     "3": [
         {
-            "distance": 4,
-            "neighbor": 11,
-            "time": 36
-        },
-        {
-            "distance": 17,
-            "neighbor": 25,
-            "time": 25
-        },
-        {
             "distance": 9,
-            "neighbor": 10,
-            "time": 39
+            "neighbor": 2,
+            "time": 46
         },
         {
-            "distance": 4,
-            "neighbor": 12,
-            "time": 16
-        }
-    ],
-    "30": [
-        {
-            "distance": 12,
-            "neighbor": 4,
-            "time": 27
-        },
-        {
-            "distance": 14,
-            "neighbor": 26,
+            "distance": 11,
+            "neighbor": 7,
             "time": 15
         },
         {
             "distance": 7,
-            "neighbor": 18,
-            "time": 2
+            "neighbor": 4,
+            "time": 51
         },
         {
-            "distance": 9,
-            "neighbor": 2,
-            "time": 40
-        }
-    ],
-    "31": [
-        {
-            "distance": 19,
-            "neighbor": 19,
-            "time": 44
-        },
-        {
-            "distance": 6,
-            "neighbor": 21,
-            "time": 44
-        },
-        {
-            "distance": 6,
-            "neighbor": 27,
-            "time": 5
-        },
-        {
-            "distance": 6,
-            "neighbor": 8,
-            "time": 33
-        },
-        {
-            "distance": 3,
+            "distance": 16,
             "neighbor": 10,
-            "time": 17
+            "time": 3
         },
         {
             "distance": 20,
-            "neighbor": 28,
-            "time": 16
+            "neighbor": 4,
+            "time": 36
+        },
+        {
+            "distance": 3,
+            "neighbor": 5,
+            "time": 49
         }
     ],
     "4": [
         {
-            "distance": 12,
-            "neighbor": 30,
-            "time": 75
+            "distance": 7,
+            "neighbor": 3,
+            "time": 45
         },
         {
-            "distance": 3,
+            "distance": 20,
+            "neighbor": 3,
+            "time": 51
+        },
+        {
+            "distance": 18,
             "neighbor": 10,
-            "time": 50
+            "time": 41
         },
         {
-            "distance": 16,
-            "neighbor": 6,
-            "time": 5
+            "distance": 11,
+            "neighbor": 8,
+            "time": 8
+        },
+        {
+            "distance": 18,
+            "neighbor": 9,
+            "time": 43
+        },
+        {
+            "distance": 9,
+            "neighbor": 9,
+            "time": 21
         }
     ],
     "5": [
         {
-            "distance": 2,
-            "neighbor": 24,
-            "time": 67
+            "distance": 5,
+            "neighbor": 7,
+            "time": 71
         },
         {
-            "distance": 13,
-            "neighbor": 9,
-            "time": 34
+            "distance": 3,
+            "neighbor": 3,
+            "time": 46
         },
         {
-            "distance": 16,
-            "neighbor": 18,
-            "time": 1
-        },
-        {
-            "distance": 6,
-            "neighbor": 22,
-            "time": 31
+            "distance": 1,
+            "neighbor": 11,
+            "time": 8
         }
     ],
     "6": [
         {
-            "distance": 16,
-            "neighbor": 4,
-            "time": 49
-        },
-        {
-            "distance": 8,
-            "neighbor": 16,
-            "time": 57
+            "distance": 6,
+            "neighbor": 0,
+            "time": 11
         },
         {
             "distance": 15,
-            "neighbor": 23,
-            "time": 12
+            "neighbor": 13,
+            "time": 40
+        },
+        {
+            "distance": 11,
+            "neighbor": 14,
+            "time": 71
+        },
+        {
+            "distance": 19,
+            "neighbor": 11,
+            "time": 18
         }
     ],
     "7": [
         {
-            "distance": 12,
-            "neighbor": 2,
-            "time": 87
+            "distance": 4,
+            "neighbor": 1,
+            "time": 19
         },
         {
-            "distance": 10,
-            "neighbor": 28,
-            "time": 85
+            "distance": 11,
+            "neighbor": 3,
+            "time": 41
         },
         {
-            "distance": 9,
-            "neighbor": 24,
-            "time": 18
+            "distance": 5,
+            "neighbor": 5,
+            "time": 19
         },
         {
-            "distance": 6,
-            "neighbor": 24,
-            "time": 38
+            "distance": 18,
+            "neighbor": 13,
+            "time": 44
+        },
+        {
+            "distance": 16,
+            "neighbor": 10,
+            "time": 14
+        },
+        {
+            "distance": 1,
+            "neighbor": 12,
+            "time": 47
         }
     ],
     "8": [
         {
-            "distance": 17,
-            "neighbor": 22,
-            "time": 84
+            "distance": 11,
+            "neighbor": 4,
+            "time": 83
         },
         {
-            "distance": 14,
-            "neighbor": 15,
-            "time": 77
-        },
-        {
-            "distance": 13,
+            "distance": 7,
             "neighbor": 13,
-            "time": 85
-        },
-        {
-            "distance": 20,
-            "neighbor": 14,
-            "time": 16
-        },
-        {
-            "distance": 6,
-            "neighbor": 31,
-            "time": 12
+            "time": 29
         }
     ],
     "9": [
         {
-            "distance": 13,
-            "neighbor": 5,
-            "time": 36
+            "distance": 18,
+            "neighbor": 4,
+            "time": 2
+        },
+        {
+            "distance": 9,
+            "neighbor": 4,
+            "time": 73
         }
     ]
 }
