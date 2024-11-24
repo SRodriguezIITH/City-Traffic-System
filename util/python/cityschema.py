@@ -38,6 +38,7 @@ def visualize_graph(G):
 
     plt.title("City Traffic Graph")
     plt.show()
+    plt.savefig("../../dataset/cityscheme.png")
 
 # Load the adjacency list from the JSON file
 filename = "../../dataset/city.json"
