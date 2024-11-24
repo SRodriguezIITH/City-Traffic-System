@@ -5,7 +5,7 @@ The City Traffic Management System is a simulation tool that models the traffic 
 Key Features:
 Graph Representation: The city’s road network is represented as a directed graph where intersections are nodes and roads are edges.
 Weighted Edges: Each edge in the graph carries information about the road's distance and travel time.
-Route Optimization: The application supports visualizing the shortest or most efficient routes based on input data.
+Route Optimization: The application supports visualizing the shortest or most efficient routes based on input data and modified Dijkstra considering both distance and time as a pair for traffic conditions.
 Visualization: The city’s road network is visualized with clear node labels, edge weights, and the highlighted route.
 File Structure
 bash
@@ -49,7 +49,7 @@ g++ main.cpp -o main.exe or run the main.cpp in libs/Implementation/
 
 
 # If you need to visualize the city map and routes, you can run the Python script after data files (JSON) are set up.
-util/python/python visualize_traffic.py
+util/python/python cityschema.py
 
 # Dataset
 The city.json file contains the road network as an adjacency list, where each node represents an intersection, and edges represent roads between them.
@@ -64,11 +64,12 @@ Visualizing the Graph:
 Visualize the city’s road network and highlight the route using the Python-based visualization script.
 
 # How It Works
-Data Loading: The system loads the city.json file, which describes the city’s road network, including intersections (nodes) and roads (edges).
-Graph Construction: The city data is used to construct a directed graph using C++ (via graph.cpp and graph.hpp).
-Route Generation: The predefined route (from route.json) is processed to display the shortest or most efficient path.
-Visualization: The Python-based visualize_traffic.py uses NetworkX to visualize the graph and highlight the selected route with edge labels showing the distance and travel time.
-Future Improvements
-Real-Time Traffic Updates: Incorporate live traffic data to dynamically update routes and road conditions.
-Advanced Pathfinding Algorithms: Implement additional pathfinding algorithms like A* or Bellman-Ford for more accurate route recommendations.
-Graphical User Interface (GUI): Build a GUI that allows users to manually input routes and interact with the traffic simulation in real-time.
+1. Data Loading: The system loads the city.json file, which describes the city’s road network, including intersections (nodes) and roads (edges).
+2. Graph Construction: The city data is used to construct a directed graph using C++ (via graph.cpp and graph.hpp).
+3. Route Generation: A Route is generated though modified Dikjstra and saved in route.json
+4. Visualization: The Python-based cityschema.py uses NetworkX to visualize the graph and highlight the selected route with edge labels showing the distance and travel time.
+
+# Future Improvements
+1. Real-Time Traffic Updates: Incorporate live traffic data to dynamically update routes and road conditions.
+2. Advanced Pathfinding Algorithms: Implement additional pathfinding algorithms like A* or Ball Trees
+3. Graphical User Interface (GUI): Build a GUI that allows users to manually input routes and interact with the traffic simulation in real-time.
