@@ -7,6 +7,7 @@ class Graph {
 private:
     int vertices;  // Number of intersections
     vector<vector<pair<int, pair<int, int>>>> adjList; // (neighbor, (distance, time))
+    vector<int> route;
 
 public:
     // Constructor
@@ -19,13 +20,17 @@ public:
     vector<int> dijkstra(int start, vector<int>& parent);
 
     // Simulate a continuous car journey
-    void simulateContinuousCarJourney(int start, int destination);
+    pair<vector<int>, vector<string>> simulateContinuousCarJourney(int start, int destination);
 
     // Display the graph
     void displayGraph() const;
 
     // Method to save adjacency list to a JSON file
     void saveAdjacencyListToFile(const string& filename);
+
+    void saveRouteToJson(const std::vector<int>& route, const std::string& filename);
+
+    vector<int> getRoute();
 
 };
 

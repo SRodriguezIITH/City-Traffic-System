@@ -1,7 +1,7 @@
 #include "../Headers/graph.hpp"
 
 
-Graph::Graph(int vertices) : vertices(vertices), adjList(vertices) {
+Graph::Graph(int vertices) : vertices(vertices), adjList(vertices), route(0) {
     srand(time(0));
 }
 
@@ -41,35 +41,52 @@ vector<int> Graph::dijkstra(int start, vector<int>& parent) {
     return times;
 }
 
-void Graph::simulateContinuousCarJourney(int start, int destination) {
+pair<vector<int>, vector<string>> Graph::simulateContinuousCarJourney(int start, int destination) {
     vector<int> parent(vertices, -1); 
     vector<int> times = dijkstra(start, parent);
+    vector<string> path;
+    
+    vector<int> route;
+    vector<int> route1;
 
     int current = destination;
     cout << "Simulating continuous car journey from Node " << start << " to Node " << destination << ":\n";
 
     int totalTime = 0;
     int totalDistance = 0;
+
     while (current != start) {
         int prevNode = parent[current];
         for (const auto& neighbor : adjList[prevNode]) {
             if (neighbor.first == current) {
-                int travelTime = neighbor.second.second;  
+                int travelTime = neighbor.second.second; 
                 int travelDistance = neighbor.second.first; 
                 totalTime += travelTime;
                 totalDistance += travelDistance;
-                cout << "Node " << prevNode << " --> Node " << current
-                     << " (" << travelTime << " mins, " << travelDistance << " km)\n";
+
+                route1.push_back(current);
+
+                string r = "Node " + to_string(prevNode) + " --> Node "+ to_string(current) + " (" + to_string(travelTime) + 
+                            " mins, " + to_string(totalDistance) + " km)\n";
+                path.push_back(r);
+
+               
                 break;
             }
         }
         current = prevNode;
     }
 
+    route1.push_back(start);
+    reverse(route1.begin(), route1.end());
+
     cout << "\nTotal Time: " << totalTime << " mins\n";
     cout << "Total Distance: " << totalDistance << " km\n";
     cout << "Journey completed!\n";
+
+    return {route1, path};
 }
+
 
 void Graph::displayGraph() const {
     for (int i = 0; i < vertices; ++i) {
@@ -98,4 +115,21 @@ void Graph::saveAdjacencyListToFile(const string& filename) {
     ofstream file(filename);
     file << adjListJson.dump(4); 
     file.close();
+}
+
+void Graph:: saveRouteToJson(const vector<int>& route, const string& filename) {
+    json routeJson;
+    routeJson["route"] = route;
+
+    ofstream file(filename);
+    if (file.is_open()) {
+        file << routeJson.dump(4); 
+        file.close();
+    } else {
+        cerr << "Failed to open file " << filename << std::endl;
+    }
+}
+
+vector<int> Graph::getRoute(){
+    return route;
 }
