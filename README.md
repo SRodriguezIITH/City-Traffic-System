@@ -42,7 +42,7 @@ root
 │       └── constants.cpp        # Constants used in the application
 ├── .vscode/
 ├── README.md                    # Project documentation
-└── main.cpp                      # Entry point for traffic simulation
+
 ```
 
 ## Python Libraries Used:
