@@ -1,52 +1,57 @@
 #include "../Headers/graph.hpp"
+#include "../../util/constants.cpp"
 
-// Constructor
 Graph::Graph(int vertices) : vertices(vertices), adjList(vertices), route(0) {
     srand(time(0));
 }
 
-// Add an edge between nodes `u` and `v` with same distance but different times
 void Graph::addEdge(int u, int v, int distance, int time) {
-    adjList[u].emplace_back(v, make_pair(distance, time));            // Forward edge
-    adjList[v].emplace_back(u, make_pair(distance, rand() % 50 + 1)); // Backward edge with random time
+    adjList[u].emplace_back(v, make_pair(distance, time));            
+    adjList[v].emplace_back(u, make_pair(distance, rand() % 50 + 1)); 
 }
 
-// Dijkstra's algorithm to find shortest path based on time
-vector<int> Graph::dijkstra(int start, vector<int>& parent) {
-    vector<int> times(vertices, numeric_limits<int>::max());
-    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;
+vector<double> Graph::dijkstra(int start, vector<int>& parent) {
+    vector<double> costs(vertices, INF); 
+    vector<int> times(vertices, INF);   
+    priority_queue<pair<double, int>, vector<pair<double, int>>, greater<>> pq;
 
+    costs[start] = 0.0;
     times[start] = 0;
-    pq.emplace(0, start);
+    pq.emplace(0.0, start);
     parent[start] = -1;
 
     while (!pq.empty()) {
-        int currTime = pq.top().first;
+        double currCost = pq.top().first; 
         int currNode = pq.top().second;
         pq.pop();
 
-        if (currTime > times[currNode]) continue;
+        if (currCost > costs[currNode]) continue;
 
         for (const auto& neighbor : adjList[currNode]) {
             int nextNode = neighbor.first;
-            int travelTime = neighbor.second.second; 
-            int newTime = currTime + travelTime;
+            int distance = neighbor.second.first;
+            int travelTime = neighbor.second.second;
 
-            if (newTime < times[nextNode]) {
-                times[nextNode] = newTime;
+            double newCost = currCost + alpha * distance + beta * travelTime;
+
+            
+            if (newCost < costs[nextNode]) {
+                costs[nextNode] = newCost;
+                times[nextNode] = times[currNode] + travelTime;
                 parent[nextNode] = currNode;
-                pq.emplace(newTime, nextNode);
+                pq.emplace(newCost, nextNode);
             }
         }
     }
 
-    return times;
+    return costs;
 }
 
-// Simulate a continuous car journey from start to destination
+
+
 pair<vector<int>, vector<string>> Graph::simulateContinuousCarJourney(int start, int destination) {
     vector<int> parent(vertices, -1); 
-    vector<int> times = dijkstra(start, parent);
+    vector<double> times = dijkstra(start, parent);
     vector<string> path;
     vector<int> route;
 
@@ -89,7 +94,6 @@ pair<vector<int>, vector<string>> Graph::simulateContinuousCarJourney(int start,
 
 using json = nlohmann::json;
 
-// Display the graph structure (distance and time between nodes)
 void Graph::displayGraph() const{
     for (int i = 0; i < vertices; ++i) {
         cout << "Intersection " << i << ": ";
@@ -102,7 +106,6 @@ void Graph::displayGraph() const{
     }
 }
 
-// Save the adjacency list to a JSON file
 void Graph::saveAdjacencyListToFile(const string& filename) {
     json adjListJson;
 
@@ -125,7 +128,6 @@ void Graph::saveAdjacencyListToFile(const string& filename) {
     }
 }
 
-// Save the route to a JSON file
 void Graph::saveRouteToJson(const vector<int>& route, const string& filename) {
     json routeJson;
     routeJson["route"] = route;
@@ -139,7 +141,6 @@ void Graph::saveRouteToJson(const vector<int>& route, const string& filename) {
     }
 }
 
-// Getter for the current route
 vector<int> Graph::getRoute() {
     return route;
 }

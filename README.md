@@ -1,14 +1,18 @@
 # City Traffic Management System
-Overview
-The City Traffic Management System is a simulation tool that models the traffic network of a city. The system utilizes graph theory to represent the city's road network and applies algorithms to optimize and visualize traffic flow. The project provides a detailed visualization of the city's road network, and the most efficient routes are highlighted based on predefined input data.
+Project Submitted by:
+Sonit Patil (bm23btech11023)
+Ananya Dutpal (bm23btech11007)
 
-Key Features:
-Graph Representation: The city’s road network is represented as a directed graph where intersections are nodes and roads are edges.
+## Overview
+The City Traffic Management System is a simulation tool that models the traffic network of a city. The system utilizes graph theory to represent the city's road network and applies algorithms to optimize and visualize traffic flow. The project provides a detailed visualization of the city's road network, and the most efficient routes are highlighted based on input source road intersection and destination road intersection.
+
+## Key Features:
+Graph Representation: The city’s road network is represented as a bi-directed, bi-weighted graph where intersections are nodes and roads are edges.
 Weighted Edges: Each edge in the graph carries information about the road's distance and travel time.
-Route Optimization: The application supports visualizing the shortest or most efficient routes based on input data and modified Dijkstra considering both distance and time as a pair for traffic conditions.
+Route Optimization: The application supports visualizing the shortest or most efficient routes based on input data and modified Dijkstra considering both distance and time as a pair for traffic conditions with 40% weightage to distance and 60% weightage to time.
 Visualization: The city’s road network is visualized with clear node labels, edge weights, and the highlighted route.
-File Structure
-bash
+
+## File Structure:
 
 ```
 root
@@ -16,6 +20,7 @@ root
 │   ├── city.json                # Adjacency list for city roads
 │   ├── cityscheme.png           # Visualization of the entire city as a Graph
 │   ├── route.json               # Route Data Saved after Optimization 
+│   ├── report.txt               # Traffic Report Created for generated city
 │   └── routeplan.png            # Image of the optimal route in city as a Graph
 ├── libs/
 │   ├── Classes/
@@ -51,9 +56,11 @@ g++ main.cpp -o main.exe or run the main.cpp in libs/Implementation/
 # If you need to visualize the city map and routes, you can run the Python script after data files (JSON) are set up.
 util/python/python cityschema.py
 
+
 # Dataset
 The city.json file contains the road network as an adjacency list, where each node represents an intersection, and edges represent roads between them.
 The route.json file contains a predefined route that will be visualized within the network.
+report.txt will give a traffic report of the city
 
 Running the Program:
 
